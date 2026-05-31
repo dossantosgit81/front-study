@@ -1,0 +1,18 @@
+/*
+Ordem de prioridades css:
+    1 - id
+    2 - class
+    3 - tag
+O elemento mais específico sempre possui preferência maior*/
+p{
+    color: pink;/*Comentários*/
+}
+
+.texto{
+    font-weight: bold;
+    color: aqua;
+}
+
+#titulo{
+    color: blueviolet;
+}
