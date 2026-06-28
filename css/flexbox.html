@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        font-size: 30px;
+        display: flex;
+        border: 10px solid red;
+        gap: 10px;
+        height: 800px;
+        width: 300px;
+        /* flex-direction: row-reverse; */
+        /*Quebra os elementos quando não há mais espaço
+
+        flex-wrap: wrap;
+        */
+        /* flex-flow: column wrap;
+        flex-wrap: wrap; */
+
+        /*Posiciona os elementos no incicio ou no fim*/
+        /* justify-content: space-evenly;
+        align-items:start; */
+    }
+    .item{
+        border: 10px solid;
+        width: 150px;
+        height: 150px;
+    }
+    #id1{
+        /* flex-grow: 1; */
+        /* flex-shrink: 1; */
+        /* flex-basis: 100px; */
+        /* flex: 2 1 100px ; */
+
+        /* align-self:flex-end ; */
+        order: 0;
+    }
+    #id2{
+        /* flex-shrink: 2; */
+        /* align-self: center; */
+        order: 1;
+
+    }
+
+    #id3{
+        order: 2;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="id1" class="item">Item 1</div>
+        <div id="id2" class="item">Item 2</div>
+        <div id="id3" class="item">Item 3</div>
+       
+    </div>
+</body>
+</html>

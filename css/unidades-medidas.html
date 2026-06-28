@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        body{
+            margin: 0;
+            font-size: 20px;
+        }
+        .div1{
+            /* width: 150px; */
+            /* width: 100cm; */
+            /* width: 100mm; */
+            /* width: 50%; */
+
+            background-color: aqua;
+            
+            /* Unidades relativas */
+            /*Faz referência a maior medida da tela entre altura e largura*/
+            width: 128vmax;
+            /*Faz referência a menor medida da tela entre altura elargura*/
+            /* width: 65vmin;  */
+            /*  VH/VW - Área visivel para o usuário. O Tamanho da largura de um elemento*/
+            /* width: 50vw; */
+            height: 100vh;
+
+            /* Refrente ao elemento pai, pois o body é o elemento pai e tem font-zize de 20px. 1 em, significa que o elemento filho terá 20px de font-size*/
+            /* font-size: 0.5em; */
+
+            /* Rem é a mesma coisa mas faz referência a tag html, no caso 20 px então 1 rem igual a 20px no elemento pai */
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        texto
+    </div>
+</body>
+</html>
